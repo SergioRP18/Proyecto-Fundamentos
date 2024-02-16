@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 nav{
@@ -64,13 +65,15 @@ nav ul li a:hover{
 
 .slide ul{
     display: flex;
+    gap: 1rem;
     padding: 0;
     width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
+    animation: slide 25s  alternate ease-in;
 }
 .slide li{
     list-style: none;
     position: relative;
+    gap: 5px;
 }
 .Texto h1{
     font-size: 90px;
@@ -80,9 +83,133 @@ nav ul li a:hover{
     padding: 0 500px;
     top: 250px;
     color: white;
+    text-shadow: 2px 2px 5px black;
+}
+button{
+    position: absolute;
+    background-color: rgb(214, 212, 212);
+    height: 63px;
+    width: 278px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    align-items: center;
+    margin-left: 600px;
+    top: 500px;
+    transition-duration: 0.4s;
+}
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .slide img{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
+    margin-left: 0;
+}
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -100%;}
+    100% {margin-left: -100%;}
+}
+
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto
+
+}
+
+.footer {
+
+    background-color: #0061A8;
+    padding: 80px 0;
+
+}
+
+.footer-row {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-links {
+
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer-links h4 {
+
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #FFB26A;
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+
+.footer-links ul li a {
+
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+
+}
+
+.footer-links ul li a:hover {
+
+    color: #FFFFFF;
+    padding-left: 6px;
+
+}
+
+.social-link a {
+
+    display: inline-block;
+    min-height: 40px;
+    min-width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+
+}
+
+.social-link a:hover {
+
+    background-color: #FFB26A;
+
+}
+
+@media(max-width:991px) {
+
+    .footer-row {
+        text-align: center;
+    }
+
+
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
