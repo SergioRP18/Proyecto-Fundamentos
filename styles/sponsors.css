@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    overflow: auto;
+}
+
+h3{
+    color: gray;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.sponsors h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.sponsors hr {
+    background-color: orange;
+    border: none;
+    border-radius: 2px;
+    margin-left: 677px;
+    margin-top: 80px;
+    width: 168px;
+    height: 7px;
+}
+
+.sponsors .img ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+.sponsors .img ul li img {
+    width: 50%;
+}
+
+.sponsors .line {
+    margin-top: 400px;
+    margin-bottom: 100px;
+    margin-left: 678px;
+} 
+
+.sponsors button {
+    color: white;
+    margin-left: 615px;
+    margin-top: 1000px;
+    background-color: #525252;
+}
+
+.info .article h4 {
+    margin-top: 100px;
+    margin-bottom: 15px;
+    margin-left: 505px;
+    font-size: 24px;
+}
+
+.info .text p {
+    width: 30%;
+    margin-left: 505px;
+    justify-content: flex-start;
+}
+
+.info img {
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-bottom: 200px;
+    width: 20%;
+}
+
+.info .article .cat {
+    margin-top: -400px;
+    margin-bottom: 200px;
+    margin-left: 820px;
+    font-size: 70px;
+}
+
+.article .line {
+    background-color: orange;
+    border: none;
+    border-radius: 2px;
+    width: 168px;
+    height: 7px;
+    margin-left: 677px;
+}
+
+.section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.info .article2 h4 {
+    font-size: 24px;
+    margin-left: 200px;
+    margin-bottom: 15px;
+}
+
+.info .article2 .text p {
+    width: 25%;
+    margin-left: 200px;
+}
+
+.info .article2 h1 {
+    margin-left: 200px;
+    font-size: 70px;
+    margin-top: -500px;
+}
+
+.info .article2 img {
+    width: 30%;
+    margin-left: 600px;
+    margin-top: -30px;
+    margin-bottom: 200px---;
+}

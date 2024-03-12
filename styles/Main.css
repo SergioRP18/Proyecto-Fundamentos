@@ -6,7 +6,7 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow: auto;
 }
 
 nav{
@@ -101,7 +101,7 @@ button{
     border: none;
     font-weight: 500;
     align-items: center;
-    margin-left: 600px;
+    margin-left: 617px;
     top: 500px;
     transition-duration: 0.4s;
 }
