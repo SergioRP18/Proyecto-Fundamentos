@@ -1,3 +1,12 @@
+.carrusel {
+    overflow: hidden;
+}
+
+#catalog-button {
+    position: relative;
+    top: 0;
+}
+
 .slide ul{
     display: flex;
     padding: 0;
@@ -13,15 +22,18 @@
     margin-bottom: 35px;
     position: relative;
     text-align: center;
-    padding: 0 500px;
     color: white;
     text-shadow: 2px 2px 5px black;
 }
 
 .Texto {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     z-index: 1;
     top: 30%;
+    width: 100%;
 }
 button{
     position: absolute;
@@ -32,7 +44,6 @@ button{
     border: none;
     font-weight: 500;
     align-items: center;
-    margin-left: 600px;
     top: 500px;
     transition-duration: 0.4s;
 }
