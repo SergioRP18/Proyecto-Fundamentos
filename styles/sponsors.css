@@ -79,6 +79,7 @@ h3{
 }
 
 .info .article .cat {
+    text-shadow: 2px 2px 15px orange;
     margin-top: -400px;
     margin-bottom: 200px;
     margin-left: 820px;
@@ -113,6 +114,7 @@ h3{
 }
 
 .info .article2 h1 {
+    text-shadow: 2px 2px 15px red;
     margin-left: 200px;
     font-size: 70px;
     margin-top: -500px;
@@ -122,5 +124,65 @@ h3{
     width: 30%;
     margin-left: 600px;
     margin-top: -30px;
-    margin-bottom: 200px---;
+    margin-bottom: 200px;
+    cursor: pointer;
+}
+
+.info .article3 h4 {
+    font-size: 24px;
+    margin-left: 800px;
+    margin-top: 400px;
+    margin-bottom: 15px;
+}
+
+.info .article3 .text p {
+    width: 25%;
+    margin-left: 800px;
+}
+
+.info .article3 h1 {
+    text-shadow: 2px 2px 15px gray;
+    margin-left: 1020px;
+    margin-top: -500px;
+    font-size: 70px;
+}
+
+.info .article3 img {
+    width: 27%;
+    margin-left: 200px;
+    margin-top: -1px;
+    margin-bottom: 200px;
+    cursor: pointer;
+}
+
+.info .article4 h4 {
+    font-size: 24px;
+    margin-top: 400px;
+    margin-left: 200px;
+    margin-bottom: 15px;
+}
+
+.info .article4 .text p {
+    width: 25%;
+    margin-left: 200px;
+}
+
+.info .article4 {
+    margin-bottom: 400px;
+}
+
+.info .article4 h1 {
+    text-shadow: 2px 2px 15px red;
+    margin-left: 200px;
+    font-size: 70px;
+    margin-top: -700px;
+}
+
+.info .article4 img {
+    position: relative;
+    width: 30%;
+    margin-left: 650px;
+    margin-top: -30px;
+    margin-bottom: 405px;
+    cursor: pointer;
 }

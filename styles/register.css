@@ -84,11 +84,3 @@ body {
 .register .container button a {
     color: white;
 }
-
-footer {
-    background-color:rgba(0, 97, 168, 1);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    margin-top: 700px;
-}

@@ -74,3 +74,7 @@ nav ul li a:hover{
 #flag{
     height: 2vw;
 }
+
+input {
+    padding: 3px 2px;
+}
