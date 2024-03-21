@@ -4,3 +4,131 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
 }
+
+body{
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 10rem;
+}
+
+.container img {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 30%;
+    aspect-ratio: 3/3;
+}
+
+.text{
+    margin-top: 50px;
+    width: 40%;
+    min-width: 20%;
+}
+
+.text h4 {
+    color: #0061A8;
+    margin-top: 5px;
+}
+
+.money{
+    display: flex;
+    margin-top: 20px;
+}
+
+.money p {
+    margin-bottom: 15px;
+}
+
+.number{
+    margin-left: 5px;
+}
+
+.money .number span {
+    margin-top: -10px;
+} 
+
+.Top h5 {
+    margin-top: 5px;
+}
+
+.size {
+    background-color: #E6E6E6;
+    box-shadow: 0px 3px 3px #c8c8c8;
+    width: 25%;
+    padding: 10px;
+    margin-top: 292px;
+    margin-left: -775px;
+}
+
+.size p {
+    margin-left: 20PX;
+    margin-top: 20px;
+}
+
+.size ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    list-style: none;
+    gap: 1rem;
+}
+
+.size ul li button{
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.size ul li button:hover {
+    background-color: orange;
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.button select {
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.button button {
+    background-color: #0061A8;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 240px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.button button:hover {
+    color: orange;
+}
+
+.size .button a {
+    margin-left: 140px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
