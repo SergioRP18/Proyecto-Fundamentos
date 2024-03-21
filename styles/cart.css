@@ -224,7 +224,7 @@ button:hover {
 
 .headed{
 
-    font-size: x-small;
+    font-size: 10px;
     border-radius: 5px;
     border-color: red;
     margin-top: 20px;
@@ -253,7 +253,6 @@ button:hover {
 
     background-color: white;
     width: 45%;
-    height: 100vh;
     margin-left: 45px;
 
 }
@@ -352,4 +351,18 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
 
+}
+
+.gallery .number p {
+    margin-top: 80px;
+    margin-bottom: 400px;
+    margin-left: 355px;
+}
+
+.gallery .number button {
+    background-color: #525252;
+    color: white;
+    margin-top: 1270px;
+    margin-left: 320px;
+    cursor: pointer;
 }
