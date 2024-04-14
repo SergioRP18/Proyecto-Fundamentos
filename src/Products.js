@@ -8,7 +8,6 @@ class Products {
 
 createHtml(){
         return `
-    <div class= "gallery" id="product-items">
         <div class="items">
         <div class="fila">
           <div class="item">
@@ -29,7 +28,6 @@ createHtml(){
             </div>
           </div>
         </div>
-      </div>
         `
     }
 }
