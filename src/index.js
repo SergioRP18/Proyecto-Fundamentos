@@ -7,6 +7,19 @@ const listOfProducts = [
     new Products("ACTIVATE SERIES LIFECYCLE VERTICAL EXERCISE BIKE", "MATRIX", "../assets/shop.png", "../assets/optimized---Go.png"),
 ]
 
+function createAllProducts(){
+    const results = shopData.results
+    for(let i; i < results.length; i++){
+        const obj = results[i]
+        const price = `${obj.price}`
+        const name = obj.title
+        const imageUrl = obj.images
+        const product = new Products(name, brand,)
+
+
+    }
+}
+
 function fillScreenWithProducts(){
     const container = document.getElementById("product-items")
     for(let i = 0; i < listOfProducts.length; i++){
