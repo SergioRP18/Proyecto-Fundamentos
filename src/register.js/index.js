@@ -1,66 +1,47 @@
-function formValidation(){
-    let userName = "name"
-    let userEmail = "email"
-    let userPassword = "password"
-    let repeatPassword = "repeat-password";
+const nombre = document.getElementById("user")
+const email = document.getElementById("email")
+const pass = document.getElementById("password")
+const repeatPass = document.getElementById("repeat")
+const form = document.getElementById("form")
 
-    if(nameId(userName,7,10)){
-        return false;
+form.addEventListener("submit", e =>{
+    e.preventDefault()
+    if (!validateNombre()) {
+        alert("El nombre no es válido. Debe tener al menos 6 caracteres.");
+        return;
     }
-    if(valueEmail(userEmail)){
-        return false;
+    
+    if (!validateEmail()) {
+        alert("El email no es válido.");
+        return;
     }
-    if(valuePassword(userPassword,S,N)){
-        return false;
+    
+    if (!validatePassword()) {
+        alert("La contraseña no es válida. Debe tener al menos 8 caracteres.");
+        return;
     }
-    if(repeatPassword(repeatPassword,S,N)){
-        return false;
+    
+    if (!validateRepeatPassword()) {
+        alert("Las contraseñas no coinciden.");
+        return;
     }
+    
+    window.location.href = "file:///C:/Users/Sergio/OneDrive%20-%20Universidad%20Icesi%20(@icesi.edu.co)/Desktop/Quinto%20semestre/Fundamentos%20de%20programaci%C3%B3n/Proyecto-Fundamentos/html/profile.html"
+});
+
+function validateNombre() {
+    return nombre.value.length >= 6;
 }
 
-function nameId(userName){
-    let name = "Lucas";
-    if(nameId.value(name)){
-        return true;
-    } else{
-        alert('El nombre no es adecuado');
-        userName();
-        return false;
-    }
+function validateEmail() {
+    const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    return regexEmail.test(email.value);
 }
 
-function valueEmail(userEmail){
-    let emailFormat = "eduardomejia@gmail.com"; 
-    if(userEmail.value(emailFormat)){
-        return true;
-    } else {
-        alert("El correo ingresado es invalido!");
-        userEmail();
-        return false;
-    }
+function validatePassword() {
+    return pass.value.length >= 8;
 }
 
-function valuePassword(userPassword, S, N){
-    let password = userPassword.value.length;
-    if(password == 0, password >= N, password < S){
-        alert("La contraseña no es correcta / Entre " +S+ "a" +N);
-        password();
-        return false;
-    }
-    return true;
+function validateRepeatPassword() {
+    return repeatPass.value === pass.value;
 }
-
-function repeatPassword(repeatPassword, S, N){
-    let rptPassword = repeatPassword.value.length;
-    if(rptPassword == 0, rptPassword >= N, rptPassword < S){
-        alert("La contraseña no es correcta / Entre " +S+ "a" +N);
-        password();
-        return false;
-    }
-    return true;
-}
-
-nameId();
-valueEmail();
-valuePassword();
-repeatPassword();
