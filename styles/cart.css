@@ -366,3 +366,7 @@ button:hover {
     margin-left: 320px;
     cursor: pointer;
 }
+
+.derecha li span{
+    justify-content: center;
+}

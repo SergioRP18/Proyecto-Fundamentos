@@ -6,13 +6,13 @@ const form = document.getElementById("form")
 
 form.addEventListener("submit", e =>{
     e.preventDefault()
-    if (!validateNombre()) {
-        alert("El nombre no es válido. Debe tener al menos 6 caracteres.");
+    if (!validateEmail()) {
+        alert("El email no es válido.");
         return;
     }
     
-    if (!validateEmail()) {
-        alert("El email no es válido.");
+    if (!validateNombre()) {
+        alert("El nombre no es válido. Debe tener al menos 6 caracteres.");
         return;
     }
     
@@ -26,7 +26,7 @@ form.addEventListener("submit", e =>{
         return;
     }
     
-    window.location.href = "file:///C:/Users/Sergio/OneDrive%20-%20Universidad%20Icesi%20(@icesi.edu.co)/Desktop/Quinto%20semestre/Fundamentos%20de%20programaci%C3%B3n/Proyecto-Fundamentos/html/profile.html"
+    window.location.href = "./profile.html";
 });
 
 function validateNombre() {

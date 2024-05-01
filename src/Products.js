@@ -18,7 +18,7 @@ createHtml(){
 
             <div class="bajo">
               <p class="description">"${this.brand}"</p>
-              <a href="../html/details.html"
+              <a
                 ><img src="${this.favorite}" alt="" class="miniicon"
               /></a>
             </div>
