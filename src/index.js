@@ -13,6 +13,7 @@ function createAllProducts(){
         const obj = results[i]
         const price = `${obj.price}`
         const name = obj.title
+        const brand = obj.brand
         const imageUrl = obj.images
         const product = new Products(name, brand,)
 

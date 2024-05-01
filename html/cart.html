@@ -22,7 +22,10 @@
     />
   </head>
 
-  <body>
+  <body
+    onload="recuperarDeSessionStorage()"
+    onbeforeunload="guardarEnSessionStorage()"
+  >
     <section>
       <nav class="menu">
         <div class="icono">

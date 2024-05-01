@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="../styles/Nav.css" />
     <title>Details Products</title>
   </head>
-  <body>
+  <body
+    onload="recuperarDeSessionStorage()"
+    onbeforeunload="guardarEnSessionStorage()"
+  >
     <section>
       <nav>
         <div class="icono">
@@ -81,10 +84,10 @@
         <div class="button">
           <select id="selector">
             <option value="1">1</option>
-            <option value="1">2</option>
-            <option value="1">3</option>
-            <option value="1">4</option>
-            <option value="1">5</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
           </select>
           <button id="enviar">Add to Cart</button>
           <a href=".">90-DAY RETURNS</a>
