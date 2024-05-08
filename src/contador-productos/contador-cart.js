@@ -23,6 +23,7 @@ function guardarEnSessionStorage(){
 }
 
 function actualizarContador(){
+    guardarEnSessionStorage();
     contadorElemento.textContent = contador;
 }
 
@@ -34,3 +35,5 @@ function incrementarContador(){
 iconoContador.forEach((icon) => {
     icon.addEventListener("click", () => incrementarContador());
 })
+
+recuperarDeSessionStorage();

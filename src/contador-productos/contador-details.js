@@ -10,6 +10,7 @@ function Init(){
 }
 
 function actualizarContador(){
+    guardarEnSessionStorage();
     contadorElemento.textContent = contador;
 }
 
@@ -44,3 +45,5 @@ function onBotonCartClick(){
 
     contadorElemento.innerText = contadorActualEntero;
 }
+
+recuperarDeSessionStorage();
