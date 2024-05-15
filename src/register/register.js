@@ -1,3 +1,5 @@
+const localStorage = window.localStorage
+
 const nombre = document.getElementById("user")
 const email = document.getElementById("email")
 const pass = document.getElementById("password")
@@ -26,7 +28,7 @@ form.addEventListener("submit", e =>{
         return;
     }
     
-    window.location.href = "./profile.html";
+    saveUser()
 });
 
 function validateNombre() {
@@ -44,4 +46,36 @@ function validatePassword() {
 
 function validateRepeatPassword() {
     return repeatPass.value === pass.value;
+}
+
+function saveUser(){
+    const nombre = document.getElementById("user").value
+    const email = document.getElementById("email").value
+    const password = document.getElementById("password").value
+    const repeatPass = document.getElementById("repeat").value
+    const id = (Math.random() + 1).toString(36).substring(7);
+
+    const userToSave = {
+        id : id,
+        nombre : user,
+        password : password,
+        email : email,
+        repeatpass : repeat
+    }
+        
+
+    const userlistString = localStorage.getItem("users")
+    if(userlistString){
+        let listObject = JSON.parse(userlistString)
+        listObject.push(userToSave)
+
+        const listToSave = JSON.stringify(listObject)
+        localStorage.setItem("users", listToSave)
+    } else {
+        const userList = [userToSave]
+        const listToSave = JSON.stringify(userList)
+        localStorage.setItem("users", listToSave)
+    }
+
+    window.location.href = "./profile.html";
 }
