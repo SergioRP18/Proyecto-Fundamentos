@@ -34,7 +34,7 @@
           <ul class="derecha">
             <li>
               <span id="contador-cart">0</span>
-              <a href="./details.html"
+              <a href="./buy.html"
                 ><img src="../assets/shop.png" alt="shopping" id="shopcar"
               /></a>
             </li>
@@ -64,26 +64,17 @@
       <div class="filter">
         <h3 class="a">Showing Results For</h3>
 
-        <h5 class="b">Products For</h5>
+        <h5 class="b">Menu</h5>
 
-        <h6 class="c"><a href="">Facility</a></h6>
-        <h6 class="c"><a href="">Popular Cardio Equipment</a></h6>
-        <h6 class="c"><a href="">Home</a></h6>
-
-        <h5 class="b">Series</h5>
-
-        <h6 class="c"><a href="">Elevation Series</a></h6>
-        <h6 class="c"><a href="">Activation Series</a></h6>
-        <h6 class="c"><a href="">Integrity Series</a></h6>
-        <h6 class="c"><a href="">Arc Series</a></h6>
+        <h6 class="c"><a href="../html/favorite.html">Favorite</a></h6>
+        <h6 class="c"><a href="../Main.html">Home</a></h6>
 
         <h5 class="b">Brands</h5>
 
-        <h6 class="c"><a href="">Bass Gym Shop</a></h6>
-        <h6 class="c"><a href="">TechnoGym</a></h6>
-        <h6 class="c"><a href="">BhFitness</a></h6>
-        <h6 class="c"><a href="">Tunturi</a></h6>
-        <h6 class="c"><a href="">Matrix</a></h6>
+        <h6 class="c"><a href="./cart.html?brand=TechnoGym">TechnoGym</a></h6>
+        <h6 class="c"><a href="./cart.html?brand=BhFitness">BhFitness</a></h6>
+        <h6 class="c"><a href="./cart.html?brand=Tunturi">Tunturi</a></h6>
+        <h6 class="c"><a href="./cart.html?brand=MATRIX">Matrix</a></h6>
       </div>
 
       <div class="gallery" id="product-items"></div>
@@ -139,9 +130,16 @@
     </footer>
 
     <script src="../src/shopdata.js"></script>
-    <script src="../src/data.js"></script>
+
     <script src="../src/Products.js"></script>
-    <script src="../src/index.js"></script>
+    <script src="../src/model/Favorite.js"></script>
+
+    <script src="../src/mappers/productMapper.js"></script>
+    <script src="../src/mappers/favoriteMapper.js"></script>
+    
+    <script src="../src/populatedb.js"></script>
+    
+    <script src="../src/cart.js"></script>
     <script src="../src/contador-productos/contador-cart.js"></script>
   </body>
 </html>

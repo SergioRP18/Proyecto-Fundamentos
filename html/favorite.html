@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/Nav.css">
+    <link rel="stylesheet" href="../styles/favorite.css">
+    <title>Mis favoritos</title>
+</head>
+<body>
+    <section>
+        <nav>
+          <div class="icono">
+            <a href="../Main.html"
+              ><img src="../assets/icono de la marca.jpg" alt="Logo" id="Logo"
+            /></a>
+          </div>
+
+          <div>
+            <ul class="derecha">
+              <li>
+                <a href="../html/cart.html"
+                  ><img src="../assets/shop.png" alt="shopping" id="shopcar"
+                /></a>
+              </li>
+              <li>
+                <a href="../html/profile.html"
+                  ><img
+                    src="../assets/user-profile-icon.png"
+                    alt="user"
+                    id="profile"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../assets/colombia-jpg.jpg" alt="flag" id="flag"
+                /></a>
+              </li>
+              <br />
+              <input type="search" placeholder="Search" />
+            </ul>
+          </div>
+        </nav>
+      </section>
+
+        <section class="padre" id="card-favorite"></section>
+</body>
+
+<script src="../src/Products.js"></script>
+<script src="../src/model/Favorite.js"></script>
+
+<script src="../src/mappers/productMapper.js"></script>
+<script src="../src/mappers/favoriteMapper.js"></script>
+
+<script src="../src/favorite.js"></script>
+</html>

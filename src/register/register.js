@@ -57,10 +57,10 @@ function saveUser(){
 
     const userToSave = {
         id : id,
-        nombre : user,
+        nombre : nombre,
         password : password,
         email : email,
-        repeatpass : repeat
+        repeatPass : repeatPass
     }
         
 
