@@ -1,8 +1,8 @@
 init();
 
-function init () {
+async function init () {
     if (checkIfProductsExist() === false) {
-        const productsFromJson = shopData.results;
+        const productsFromJson = await fetch ('https://github.com/SergioRP18/API-mock-GymBassShop.git')
         const products = createProducts(productsFromJson);
         localStorage.setItem("products", JSON.stringify(products));
     }
